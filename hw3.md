@@ -51,25 +51,7 @@ B3 --> E2[依日期/會議名分類]
 B3 --> E3[查詢歷史會議 !查會議]
 ```
 ### 使用案例圖
-```mermaid
-graph LR
-User["使用者<br/>(伺服器管理員或一般成員)"]
-Admin["系統管理員"]
-
-subgraph System["Discord 會議書記官 BOT"]
-  UC1["會議錄製與轉錄"]
-  UC2["生成摘要"]
-  UC3["下載紀錄檔"]
-  UC4["查詢歷史會議"]
-  UC5["系統維護與日誌管理"]
-end
-
-User --> UC1
-User --> UC2
-User --> UC3
-User --> UC4
-Admin --> UC5
-```
+![relationship](relationship.jpeg)
 ### 使用案例說明
 #### 使用案例 1：會議錄製與轉錄
 | 項目        | 說明                                                                                   |
